@@ -399,6 +399,7 @@ process.umask = function () {
 //
 //
 //
+//
 
 
 
@@ -726,6 +727,92 @@ function applyToTag (styleElement, obj) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__NavElement_vue__ = __webpack_require__(18);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -8503,7 +8590,7 @@ exports = module.exports = __webpack_require__(4)(false);
 
 
 // module
-exports.push([module.i, "\n.container[data-v-2b2a8530] {\n\tposition: static;\n}\n.row[data-v-2b2a8530] {\n\tposition: static;\n}\n.nav-left[data-v-2b2a8530] {\n\tposition: static;\n}\n.top-bar[data-v-2b2a8530] {\n\tbackground-color: #ffcd00;\n\tline-height: 1.8rem;\n\tpadding: 10px 0;\n}\n.nav-top[data-v-2b2a8530] {\n\tpadding-top: 15px;\n    padding-bottom: 0;\n    margin-bottom: 25px;\n    border: 0;\n}\n.main-header[data-v-2b2a8530] {\n\tposition: relative;\n\tcolor: #001e41;\n}\n.main-company-name[data-v-2b2a8530] {\n\tfont-size: 30px;\n}\n", ""]);
+exports.push([module.i, "\n.container[data-v-2b2a8530] {\n\t\tposition: static;\n}\n.row[data-v-2b2a8530] {\n\t\tposition: static;\n}\n.nav-left[data-v-2b2a8530] {\n\t\tposition: static;\n}\n.top-bar[data-v-2b2a8530] {\n\t\tbackground-color: #ffcd00;\n\t\tline-height: 1.8rem;\n\t\tpadding: 10px 0;\n}\n.nav-top[data-v-2b2a8530] {\n\t\tpadding-top: 15px;\n\t    padding-bottom: 0;\n\t    margin-bottom: 25px;\n\t    border: 0;\n}\n.main-header[data-v-2b2a8530] {\n\t\tposition: relative;\n\t\tcolor: #001e41;\n}\n.main-company-name[data-v-2b2a8530] {\n\t\tfont-size: 30px;\n}\n.top-bar-item[data-v-2b2a8530] {\n\t\tcolor: #000;\n    \tline-height: 1rem;\n\t\tfont-size: 0.8rem;\n\t\tfont-weight: bold;\n\t\tcursor: pointer;\n}\n", ""]);
 
 // exports
 
@@ -8642,7 +8729,7 @@ exports = module.exports = __webpack_require__(4)(false);
 
 
 // module
-exports.push([module.i, "\n.body-slot[data-v-56f50bb3] {\n\tdisplay: none;\n    position: absolute;\n    padding: 4em 0 1em;\n    left: 0;\n    background: #fafafa;\n    width: 100vw;\n}\n.title-slot[data-v-56f50bb3] {\n\tcursor: pointer;\n}\n.element-container[data-v-56f50bb3] {\n\tposition: static;\n}\n.element-container:hover > .body-slot[data-v-56f50bb3] {\n\tdisplay: block;\n}\n", ""]);
+exports.push([module.i, "\n.body-slot[data-v-56f50bb3] {\n\tdisplay: none;\n    position: absolute;\n    padding: 1em;\n    left: 0;\n    background: #fafafa;\n    width: 100vw;\n}\n.title-slot[data-v-56f50bb3] {\n\tcursor: pointer;\n\tpadding: 0.7rem;\n\tfont-size: 0.8rem;\n\tfont-weight: bold;\n\twhite-space: nowrap;\n}\n.element-container[data-v-56f50bb3] {\n\tposition: static;\n}\n.element-container:hover > .body-slot[data-v-56f50bb3] {\n\tdisplay: block;\n}\n.element-container:hover > .title-slot[data-v-56f50bb3] {\n\tbackground-color: #fafafa;\n}\n", ""]);
 
 // exports
 
@@ -8686,13 +8773,13 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "base-container" }, [
-    _c("div", { staticClass: "col-sm-12 top-bar" }),
+    _vm._m(0),
     _vm._v(" "),
     _c("div", { staticClass: "main-header" }, [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-md-10 nav-left" }, [
-            _vm._m(0),
+            _vm._m(1),
             _vm._v(" "),
             _c(
               "div",
@@ -8702,9 +8789,79 @@ var render = function() {
                   "nav-element",
                   { staticClass: "col-md-2" },
                   [
-                    _c("template", { slot: "title" }, [_vm._v("Who we are ")]),
+                    _c("template", { slot: "title" }, [_vm._v("Who We Are")]),
                     _vm._v(" "),
-                    _c("template", { slot: "body" }, [_vm._v("Body1")])
+                    _c("template", { slot: "body" }, [
+                      _c("div", { staticClass: "container" }, [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-md-12" }, [
+                            _c("h6", [_vm._v("Who We Are")])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-md-12" }, [
+                            _vm._v(
+                              "As a start-up independent financial advisory groups, we aim to leverage our cross border expertise to provide a distinct and innovative perspective and long term solutions for our partners in Asia"
+                            )
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-md-12" }, [
+                            _c("h6", [_vm._v("The Prime Number Way")])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-md-4" }, [
+                            _vm._v("Innovative")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-md-4" }, [
+                            _vm._v("Disciplined")
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "col-md-4" }, [
+                            _vm._v("Solution driven")
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-md-12" }, [
+                            _c("h6", [_vm._v("Our people")])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-md-12" }, [
+                            _vm._v(
+                              "Xxx has over 20 years of financial investment and advisory experience across asia Europe and the Americas "
+                            )
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("br"),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-md-12" }, [
+                            _c("h6", [_vm._v("CSR")])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-md-12" }, [
+                            _vm._v(
+                              "We invest in building the community around the same value system: we are here to make the world a better place and to make a difference"
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
                   ],
                   2
                 ),
@@ -8713,9 +8870,87 @@ var render = function() {
                   "nav-element",
                   { staticClass: "col-md-2" },
                   [
-                    _c("template", { slot: "title" }, [_vm._v("Title2")]),
+                    _c("template", { slot: "title" }, [
+                      _vm._v("What Do We Do")
+                    ]),
                     _vm._v(" "),
-                    _c("template", { slot: "body" }, [_vm._v("Body2")])
+                    _c("template", { slot: "body" }, [
+                      _c("div", { staticClass: "container" }, [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-md-12" }, [
+                            _c("h6", [_vm._v("What We Do")])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-md-12" }, [
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\tM&A and strategic advisory"
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\tPre IPO fund raising"
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\tJV and strategic alliances"
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\tInvestments and disposals\n\t\t\t\t\t\t\t\t\t\t"
+                            )
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-md-12" }, [
+                            _c("h6", [
+                              _vm._v("Debt advisory and restructuring")
+                            ])
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-md-12" }, [
+                            _vm._v(
+                              "\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\tRefinancing existing debt"
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\tSupporting acquisitions and funding development"
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\tLender negotiations"
+                            ),
+                            _c("br"),
+                            _vm._v(" "),
+                            _c("br"),
+                            _vm._v("\n\t\t\t\t\t\t\t\t\t\t\tEquity advisory"),
+                            _c("br"),
+                            _vm._v(" \n\t\t\t\t\t\t\t\t\t\t\tIPO"),
+                            _c("br"),
+                            _vm._v("\n\t\t\t\t\t\t\t\t\t\t\tShare issues"),
+                            _c("br"),
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\tBlock trades and sell-downs"
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\tCrafting the equity story"
+                            ),
+                            _c("br"),
+                            _vm._v(" "),
+                            _c("br"),
+                            _vm._v("\n\t\t\t\t\t\t\t\t\t\t\tAsset management"),
+                            _c("br"),
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\tRisk-based investment solutions \n\t\t\t\t\t\t\t\t\t\t"
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
                   ],
                   2
                 ),
@@ -8724,9 +8959,35 @@ var render = function() {
                   "nav-element",
                   { staticClass: "col-md-2" },
                   [
-                    _c("template", { slot: "title" }, [_vm._v("Title2")]),
+                    _c("template", { slot: "title" }, [_vm._v("Career")]),
                     _vm._v(" "),
-                    _c("template", { slot: "body" }, [_vm._v("Body2")])
+                    _c("template", { slot: "body" }, [
+                      _c("div", { staticClass: "container" }, [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-md-12" }, [
+                            _vm._v(
+                              "\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\tStudents and graduates"
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\tWe provide summer internship opportunities"
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\tExperienced professionals"
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\tWe would like to attract like-minded, high potential colleagues to our unique platform"
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\tOur people strive to make a positive impact on our clients and communities\n\t\t\t\t\t\t\t\t\t\t"
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
                   ],
                   2
                 ),
@@ -8735,31 +8996,27 @@ var render = function() {
                   "nav-element",
                   { staticClass: "col-md-2" },
                   [
-                    _c("template", { slot: "title" }, [_vm._v("Title2")]),
+                    _c("template", { slot: "title" }, [_vm._v("Contact Us")]),
                     _vm._v(" "),
-                    _c("template", { slot: "body" }, [_vm._v("Body2")])
-                  ],
-                  2
-                ),
-                _vm._v(" "),
-                _c(
-                  "nav-element",
-                  { staticClass: "col-md-2" },
-                  [
-                    _c("template", { slot: "title" }, [_vm._v("Title2")]),
-                    _vm._v(" "),
-                    _c("template", { slot: "body" }, [_vm._v("Body2")])
-                  ],
-                  2
-                ),
-                _vm._v(" "),
-                _c(
-                  "nav-element",
-                  { staticClass: "col-md-2" },
-                  [
-                    _c("template", { slot: "title" }, [_vm._v("Title2")]),
-                    _vm._v(" "),
-                    _c("template", { slot: "body" }, [_vm._v("Body2")])
+                    _c("template", { slot: "body" }, [
+                      _c("div", { staticClass: "container" }, [
+                        _c("div", { staticClass: "row" }, [
+                          _c("div", { staticClass: "col-md-12" }, [
+                            _vm._v(
+                              "\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t14 Myrtle Drive"
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              " \n\t\t\t\t\t\t\t\t\t\t\tGreat Neck, NY 11021"
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              "\n\t\t\t\t\t\t\t\t\t\t\tEmail: info@pncps.com\n\t\t\t\t\t\t\t\t\t\t"
+                            )
+                          ])
+                        ])
+                      ])
+                    ])
                   ],
                   2
                 )
@@ -8768,15 +9025,29 @@ var render = function() {
             )
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-md-2" }, [
-            _vm._v("\n\t\t\t\t\tright\n\t\t\t\t")
-          ])
+          _c("div", { staticClass: "col-md-2" })
         ])
       ])
     ])
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-sm-12 top-bar" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-10 top-bar-item" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-2 top-bar-item" }, [
+            _vm._v("Search")
+          ])
+        ])
+      ])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -8810,7 +9081,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_c("top-nav")], 1)
+  return _c(
+    "div",
+    [_c("top-nav"), _vm._v(" "), _c("div", { staticClass: "banner" })],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

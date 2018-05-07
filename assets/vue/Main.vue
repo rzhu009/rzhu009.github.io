@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<top-nav></top-nav>
+		<div class="banner"></div>
 	</div>
 </template>
 

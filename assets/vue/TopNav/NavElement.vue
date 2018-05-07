@@ -17,7 +17,7 @@
 	.body-slot {
 		display: none;
 	    position: absolute;
-	    padding: 4em 0 1em;
+	    padding: 1em;
 	    left: 0;
 	    background: #fafafa;
 	    width: 100vw;
@@ -25,6 +25,10 @@
 
 	.title-slot {
 		cursor: pointer;
+		padding: 0.7rem;
+		font-size: 0.8rem;
+		font-weight: bold;
+		white-space: nowrap;
 	}
 
 	.element-container {
@@ -33,5 +37,9 @@
 
 	.element-container:hover > .body-slot {
 		display: block;
+	}
+
+	.element-container:hover > .title-slot {
+		background-color: #fafafa;
 	}
 </style>

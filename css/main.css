@@ -1,0 +1,6 @@
+.banner {
+    background-image: url("../images/rothschild.jpg");
+    background-size: cover;
+	background-position: 100%, 0;
+	min-height: 300px;
+}
