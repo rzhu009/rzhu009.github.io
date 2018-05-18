@@ -1,6 +1,6 @@
 <template>
 	<div class="element-container">
-		<div class="title-slot">
+		<div class="title-slot" @click="emitNavChange">
 			<slot name="title"></slot>
 		</div>
 		<div class="body-slot">
@@ -10,7 +10,15 @@
 </template>
 
 <script>
+	export default {
+		props: ['navName'],
 
+		methods: {
+			emitNavChange(){
+				window.eventBus.$emit('navChange', this.navName);
+			}
+		}
+	}
 </script>
 
 <style scoped>

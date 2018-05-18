@@ -19,7 +19,7 @@
 						</div>
 
 						<div class="row nav-bottom">
-							<nav-element class="col-md-2">
+							<nav-element class="col-md-2" navName="WhoWeAre">
 								<template slot="title">Who We Are</template>
 								<template slot="body">
 									<div class="container">
@@ -55,7 +55,7 @@
 									</div>
 								</template>
 							</nav-element>
-							<nav-element class="col-md-2">
+							<nav-element class="col-md-2" navName="WhatWeDo">
 								<template slot="title">What Do We Do</template>
 								<template slot="body">
 									<div class="container">
@@ -93,7 +93,7 @@
 									</div>
 								</template>
 							</nav-element>
-							<nav-element class="col-md-2">
+							<nav-element class="col-md-2" navName="Careers">
 								<template slot="title">Careers</template>
 								<template slot="body">
 									<div class="container">
@@ -109,7 +109,7 @@
 									</div>
 								</template>
 							</nav-element>
-							<nav-element class="col-md-2">
+							<nav-element class="col-md-2" navName="ContactUs">
 								<template slot="title">Contact Us</template>
 								<template slot="body">
 									<div class="container">

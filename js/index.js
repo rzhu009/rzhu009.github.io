@@ -413,11 +413,26 @@ process.umask = function () {
 
 	data() {
 		return {
-			bannerText: "As a start-up independent financial advisory groups, we aim to leverage our cross border expertise to provide a distinct and innovative perspective and long term solutions for our partners in Asia"
+			bannerTextToNav: {
+				WhoWeAre: "As a start-up independent financial advisory groups, we aim to leverage our cross border expertise to provide a distinct and innovative perspective and long term solutions for our partners in Asia",
+				WhatWeDo: "What We Do",
+				Careers: "Careers",
+				ContactUs: "Contact Us"
+			},
+
+			currentNav: "WhoWeAre"
 		};
 	},
 
-	mounted() {}
+	mounted() {
+		window.eventBus.$on('navChange', this.navChange);
+	},
+
+	methods: {
+		navChange(payload) {
+			this.currentNav = payload;
+		}
+	}
 });
 
 /***/ }),
@@ -879,14 +894,15 @@ function applyToTag (styleElement, obj) {
 
 /* harmony default export */ __webpack_exports__["a"] = ({
 	components: {
-		'nav-element': __WEBPACK_IMPORTED_MODULE_0__NavElement_vue__["default"]
+		'nav-element': __WEBPACK_IMPORTED_MODULE_0__NavElement_vue__["a" /* default */]
 	}
 });
 
 /***/ }),
 /* 7 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
 //
 //
 //
@@ -898,6 +914,16 @@ function applyToTag (styleElement, obj) {
 //
 //
 //
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+	props: ['navName'],
+
+	methods: {
+		emitNavChange() {
+			window.eventBus.$emit('navChange', this.navName);
+		}
+	}
+});
 
 /***/ }),
 /* 8 */
@@ -8673,7 +8699,6 @@ function listToStyles(parentId, list) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_NavElement_vue__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_NavElement_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_NavElement_vue__);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_56f50bb3_hasScoped_true_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_NavElement_vue__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_runtime_component_normalizer__ = __webpack_require__(0);
@@ -8697,7 +8722,7 @@ var __vue_scopeId__ = "data-v-56f50bb3"
 var __vue_module_identifier__ = null
 
 var Component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_runtime_component_normalizer__["a" /* default */])(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_NavElement_vue___default.a,
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_NavElement_vue__["a" /* default */],
   __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_56f50bb3_hasScoped_true_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_NavElement_vue__["a" /* render */],
   __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_56f50bb3_hasScoped_true_optionsId_0_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_NavElement_vue__["b" /* staticRenderFns */],
   __vue_template_functional__,
@@ -8723,7 +8748,7 @@ if (false) {(function () {
   })
 })()}
 
-/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
+/* harmony default export */ __webpack_exports__["a"] = (Component.exports);
 
 
 /***/ }),
@@ -8779,7 +8804,12 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "element-container" }, [
-    _c("div", { staticClass: "title-slot" }, [_vm._t("title")], 2),
+    _c(
+      "div",
+      { staticClass: "title-slot", on: { click: _vm.emitNavChange } },
+      [_vm._t("title")],
+      2
+    ),
     _vm._v(" "),
     _c("div", { staticClass: "body-slot" }, [_vm._t("body")], 2)
   ])
@@ -8820,7 +8850,7 @@ var render = function() {
               [
                 _c(
                   "nav-element",
-                  { staticClass: "col-md-2" },
+                  { staticClass: "col-md-2", attrs: { navName: "WhoWeAre" } },
                   [
                     _c("template", { slot: "title" }, [_vm._v("Who We Are")]),
                     _vm._v(" "),
@@ -8901,7 +8931,7 @@ var render = function() {
                 _vm._v(" "),
                 _c(
                   "nav-element",
-                  { staticClass: "col-md-2" },
+                  { staticClass: "col-md-2", attrs: { navName: "WhatWeDo" } },
                   [
                     _c("template", { slot: "title" }, [
                       _vm._v("What Do We Do")
@@ -8990,7 +9020,7 @@ var render = function() {
                 _vm._v(" "),
                 _c(
                   "nav-element",
-                  { staticClass: "col-md-2" },
+                  { staticClass: "col-md-2", attrs: { navName: "Careers" } },
                   [
                     _c("template", { slot: "title" }, [_vm._v("Careers")]),
                     _vm._v(" "),
@@ -9027,7 +9057,7 @@ var render = function() {
                 _vm._v(" "),
                 _c(
                   "nav-element",
-                  { staticClass: "col-md-2" },
+                  { staticClass: "col-md-2", attrs: { navName: "ContactUs" } },
                   [
                     _c("template", { slot: "title" }, [_vm._v("Contact Us")]),
                     _vm._v(" "),
@@ -9200,7 +9230,7 @@ var render = function() {
     [
       _c("top-nav"),
       _vm._v(" "),
-      _c("banner", { attrs: { mainText: _vm.bannerText } })
+      _c("banner", { attrs: { mainText: _vm.bannerTextToNav[_vm.currentNav] } })
     ],
     1
   )
