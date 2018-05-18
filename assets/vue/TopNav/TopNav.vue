@@ -94,7 +94,7 @@
 								</template>
 							</nav-element>
 							<nav-element class="col-md-2">
-								<template slot="title">Career</template>
+								<template slot="title">Careers</template>
 								<template slot="body">
 									<div class="container">
 										<div class="row">
