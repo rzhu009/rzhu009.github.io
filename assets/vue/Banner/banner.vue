@@ -1,7 +1,9 @@
 <template>
-	<div class="row banner">
-		<div class="main-logo logo-container col-lg-4 col-md-6 col-sm-12"></div>
-		<div class="col-sm-8"></div>
+	<div class="container">
+		<div class="row banner">
+			<div class="main-logo logo-container col-lg-4 col-md-6 col-sm-12"></div>
+			<div class="col-sm-8"></div>
+		</div>
 	</div>
 </template>
 

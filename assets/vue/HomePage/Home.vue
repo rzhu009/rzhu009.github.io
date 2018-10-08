@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="body">
         <div class="home-background"></div>
         <banner></banner>
 		<top-nav></top-nav>
@@ -11,6 +11,7 @@
                 <contact-us-tab v-if="currentNav == 'contactus'"></contact-us-tab>
             </transition>
         </div>
+        <site-footer></site-footer>
 	</div>
 </template>
 
@@ -21,6 +22,7 @@
     import InvestmentBankingTab from "../Components/InvestmentBankingTab.vue";
     import CareersTab from "../Components/CareersTab.vue";
     import ContactUsTab from "../Components/ContactUsTab.vue";
+    import Footer from "../Footer/Footer.vue";
 
 	export default {
 		components: {
@@ -29,7 +31,8 @@
             "firm-tab" : FirmTab,
             "investment-banking-tab": InvestmentBankingTab,
             "careers-tab": CareersTab,
-            "contact-us-tab": ContactUsTab
+            "contact-us-tab": ContactUsTab,
+            "site-footer": Footer
 		},
 
 		data(){
@@ -51,6 +54,10 @@
 </script>
 
 <style scoped>
+    .body {
+        min-height: 100%;
+        position: relative;
+    }
     /*drawerSlide*/
     .drawerSlide-enter-active,
     .drawerSlide-leave-active {

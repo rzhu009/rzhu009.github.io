@@ -20,6 +20,12 @@
 	text-align: center;
 }
 
+/* variables */
+
+:root {
+    --main-orange: rgb(232, 134, 48);
+}
+
 /* utilities */
 
 .clickable:hover {
@@ -62,7 +68,7 @@
 
 .tab-container {
     position: relative;
-    background: rgba(232, 228, 227, 0.8);
+    background: rgba(232, 228, 227, 0.85);
     padding: 0.5rem;
     font-size: larger;
 }
